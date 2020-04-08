@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    -webkit-box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+body, html {
+  height: 100%;
+}
+
+.company-row{
+  text-align: center;
+}
+.nav-row{
+  text-align: center;
+  justify-content: center;
+  font-size: 35px;
+}
+h1{
+    font-weight: 500;
+    line-height: 75px;
+    font-size: 80px;
+    padding-top: 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-link-custom{
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 40px;
+  -webkit-transition: all .3s ease;
+  text-decoration: none;
+  color:white;
+  margin-top: 10px;
+}
+.nav-link-custom:hover{
+    background: white;
+    color: black;
+}
+.hidden-desktop{
+    display: none;
+}
+section{
+    width: 100%;
+    height: auto;
+    background-image: -webkit-linear-gradient(#80059E 0%, #550486 100%);
+}
+.section-left,
+.section-right{
+    float: left;
+}
+.section-left{
+    width: 70%;
+    padding: 3em 0;
+}
+.section-right{
+    width: 30%;
+}
+.section-title,
+.section-tagline{
+    color: white;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: all .4s ease;
+}
+.section-title{
+    font-size: 4em;
+    margin-bottom: .3em;
+    text-shadow: 0 3px 0px black,
+                 0 4px 0px rgba(150,150,150,.5);
+}
+.section-tagline{
+    font-size: 1em;
+}
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/fitness+5.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1050px) {
+  .nav-link-custom{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 40px;
+    -webkit-transition: all .3s ease;
+    text-decoration: none;
+    color:white;
+    margin-top: 10px;
+  }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+    .nav-link-custom{
+      position: relative;
+      display: inline-block;
+      font-size: 20px;
+      line-height: 40px;
+      -webkit-transition: all .3s ease;
+      text-decoration: none;
+      color:white;
+      margin-top: 10px;
+      padding: 5px;
+
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+    .nav-link-custom{
+      position: relative;
+      display: inline-block;
+      font-size: 13px;
+      line-height: 40px;
+      -webkit-transition: all .3s ease;
+      text-decoration: none;
+      color:white;
+      margin-top: 10px;
+      padding: 5px;
+    }
+    h1{
+      font-weight: 500;
+      line-height:60px;
+      font-size: 80px;
+      padding-top: 50px;
+  }
+}
