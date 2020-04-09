@@ -7,9 +7,13 @@
   padding-left: 15px;
 }
 #bio-card-body {
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 .bio-card {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 10px;
   color: #748182;
@@ -20,6 +24,7 @@
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 5px;
   width: 30%;
@@ -47,7 +52,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     color: white;
   }
   .nav-link-custom{

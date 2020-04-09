@@ -1,5 +1,7 @@
 .subheader{
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .subheader h2 {
   font-size: 60px;
@@ -15,6 +17,7 @@
 	padding: 0px 30px;
 }
 .icon i {
+	font-size: 80px;
 	font-size: 5rem;
 	color:rgb(47,79,79);
 }

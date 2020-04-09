@@ -8,7 +8,9 @@
   background: #f2f2f2;
 }
 .justify-center {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 hr {
   margin-top: 40px;
